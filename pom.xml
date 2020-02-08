@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.github.hazendaz</groupId>
+        <artifactId>base-parent</artifactId>
+        <version>24</version>
+        <relativePath />
+    </parent>
+
+    <groupId>com.github.hazendaz.jmeter</groupId>
+    <artifactId>apache-jmeter</artifactId>
+    <version>1.10.8-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <name>apache-jmeter</name>
+    <description>Distribution for Apache jmeter</description>
+    <url>https://hazendaz.github.io/jmeter/</url>
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>manual</distribution>
+            <comments>A business-friendly OSS license</comments>
+        </license>
+    </licenses>
+
+    <scm>
+        <connection>scm:git:ssh://git@github.com/hazendaz/jmeter.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com/hazendaz/jmeter.git</developerConnection>
+        <url>https://github.com/hazendaz/jmeter</url>
+        <tag>HEAD</tag>
+    </scm>
+    <distributionManagement>
+        <site>
+            <id>gh-pages</id>
+            <name>Apache jmeter Distribution Wrapper GitHub Pages</name>
+            <url>github:https://hazendaz.github.io/jmeter/</url>
+        </site>
+    </distributionManagement>
+
+    <properties>
+        <jmeter.version>5.2.1</jmeter.version>
+        <download-plugin.version>1.5.0</download-plugin.version>
+    </properties>
+
+    <build>
+        <plugins>
+            <!-- Download -->
+            <plugin>
+                <groupId>com.googlecode.maven-download-plugin</groupId>
+                <artifactId>download-maven-plugin</artifactId>
+                <version>${download-plugin.version}</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>wget</goal>
+                        </goals>
+                        <configuration>
+                            <url>https://www-us.apache.org/dist/jmeter/binaries/apache-jmeter-${jmeter.version}.tgz</url>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <!-- Attach Artifact -->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>build-helper-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>attach-artifacts</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>attach-artifact</goal>
+                        </goals>
+                        <configuration>
+                            <artifacts>
+                                <artifact>
+                                    <file>${project.build.directory}/apache-jmeter-${jmeter.version}.tgz</file>
+                                    <type>tgz</type>
+                                </artifact>
+                            </artifacts>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>
