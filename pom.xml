@@ -45,6 +45,16 @@
         <download-plugin.version>1.6.0</download-plugin.version>
     </properties>
 
+    <dependencies>
+        <!-- Trick to have dependabot alert on updates to ant -->
+        <dependency>
+            <groupId>org.apache.jmeter</groupId>
+            <artifactId>ApacheJMeter</artifactId>
+            <version>${jmeter.version}</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+
     <build>
         <plugins>
             <!-- Download -->
