@@ -41,7 +41,7 @@
     </distributionManagement>
 
     <properties>
-        <jmeter.version>5.2.1</jmeter.version>
+        <jmeter.version>5.3</jmeter.version>
         <download-plugin.version>1.6.0</download-plugin.version>
     </properties>
 
