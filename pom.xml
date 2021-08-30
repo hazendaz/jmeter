@@ -42,7 +42,7 @@
 
     <properties>
         <jmeter.version>5.4.1</jmeter.version>
-        <download-plugin.version>1.6.6</download-plugin.version>
+        <download-plugin.version>1.6.7</download-plugin.version>
     </properties>
 
     <dependencies>
