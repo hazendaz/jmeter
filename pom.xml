@@ -68,7 +68,7 @@
                             <goal>wget</goal>
                         </goals>
                         <configuration>
-                            <url>https://www-us.apache.org/dist/jmeter/binaries/apache-jmeter-${jmeter.version}.tgz</url>
+                            <url>https://dlcdn.apache.org//dist/jmeter/binaries/apache-jmeter-${jmeter.version}.tgz</url>
                         </configuration>
                     </execution>
                 </executions>
