@@ -11,7 +11,7 @@
 
     <groupId>com.github.hazendaz.jmeter</groupId>
     <artifactId>apache-jmeter</artifactId>
-    <version>5.5-SNAPSHOT</version>
+    <version>5.4.3-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>apache-jmeter</name>
@@ -46,7 +46,7 @@
     </properties>
 
     <dependencies>
-        <!-- Trick to have dependabot alert on updates to ant -->
+        <!-- Trick to have dependabot alert on updates to jmeter -->
         <dependency>
             <groupId>org.apache.jmeter</groupId>
             <artifactId>ApacheJMeter</artifactId>
