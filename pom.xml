@@ -36,7 +36,7 @@
         <site>
             <id>gh-pages-scm</id>
             <name>Apache jmeter Distribution Wrapper GitHub Pages</name>
-            <url>github:https://hazendaz.github.io/jmeter/</url>
+            <url>scm:git:ssh://git@github.com/hazendaz/jmeter.git</url>
         </site>
     </distributionManagement>
 
