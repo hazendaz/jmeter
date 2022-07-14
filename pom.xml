@@ -11,7 +11,7 @@
 
     <groupId>com.github.hazendaz.jmeter</groupId>
     <artifactId>apache-jmeter</artifactId>
-    <version>5.4.3-SNAPSHOT</version>
+    <version>5.5-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>apache-jmeter</name>
