@@ -11,7 +11,7 @@
 
     <groupId>com.github.hazendaz.jmeter</groupId>
     <artifactId>apache-jmeter</artifactId>
-    <version>5.6-SNAPSHOT</version>
+    <version>5.5.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>apache-jmeter</name>
@@ -68,7 +68,7 @@
                             <goal>wget</goal>
                         </goals>
                         <configuration>
-                            <url>https://dlcdn.apache.org//dist/jmeter/binaries/apache-jmeter-${jmeter.version}.tgz</url>
+                            <url>https://dlcdn.apache.org/jmeter/binaries/apache-jmeter-${jmeter.version}.tgz</url>
                         </configuration>
                     </execution>
                 </executions>
