@@ -43,7 +43,7 @@
 
     <properties>
         <jmeter.version>5.5</jmeter.version>
-        <download-plugin.version>1.7.0</download-plugin.version>
+        <download-plugin.version>1.6.8</download-plugin.version>
     </properties>
 
     <dependencies>
