@@ -27,7 +27,7 @@
 
     <groupId>com.github.hazendaz.jmeter</groupId>
     <artifactId>apache-jmeter</artifactId>
-    <version>5.6.2</version>
+    <version>5.6.3-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>apache-jmeter</name>
@@ -46,7 +46,7 @@
         <connection>scm:git:ssh://git@github.com/hazendaz/jmeter.git</connection>
         <developerConnection>scm:git:ssh://git@github.com/hazendaz/jmeter.git</developerConnection>
         <url>https://github.com/hazendaz/jmeter</url>
-        <tag>apache-jmeter-5.6.2</tag>
+        <tag>apache-jmeter-5.5</tag>
     </scm>
     <distributionManagement>
         <site>
