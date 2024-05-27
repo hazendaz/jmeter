@@ -84,6 +84,8 @@
                             <goal>wget</goal>
                         </goals>
                         <configuration>
+                            <!-- Double timeout as this frequently timesout at the 3 second read. -->
+                            <readTimeOut>6000</readTimeOut>
                             <url>https://dlcdn.apache.org/jmeter/binaries/apache-jmeter-${jmeter.version}.tgz</url>
                         </configuration>
                     </execution>
