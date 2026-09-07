@@ -13,3 +13,8 @@ For more information on jmeter, please see [jmeter](https://github.com/apache/jm
 # Motivation #
 
 Apache Jmeter does not currently provide a maven central distribution of the entire project. This project aims to solve that by providing users an alternative location to pull rather than the various apache mirror sites.
+
+# Note #
+
+Due to limit caps on sonatype this is now deprecated.  Apache JMeter should be asked to use immutable github releases for this but that is an mirror and they may not.  But it also has not released anything in 2 years which
+is a problem in modern coding.
